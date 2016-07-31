@@ -10,6 +10,10 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var MoonPic: UIImageView!
+    @IBOutlet weak var MoonButton: UIButton!
+    @IBOutlet weak var SunPic: UIImageView!
+    @IBOutlet weak var SunButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -18,6 +22,12 @@ class ViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    @IBAction func BlueClick(sender: AnyObject) {
+            MoonPic.hidden = true
+    }
+    @IBAction func RedClick(sender: AnyObject) {
+            SunPic.hidden = true
     }
 
 
